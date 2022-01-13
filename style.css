@@ -1,0 +1,196 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+* {
+  --color-text-main: #FF0000;
+  --color-primary: #FFFF00;
+  --wrapper-height: 500vh;
+  --image-max-width: 500px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+  font-size: 1.5rem;
+}
+
+.main {
+  color: #FF0000;
+  text-decoration: none;
+  border-bottom: 1px;
+}
+.ossn {
+  color: #ff00d3;
+  text-decoration: none;
+}
+.warn {
+  color: #FF0000;
+  margin-top: 30px
+}
+
+.btn {
+  font-weight: 500;
+  color: #9C27B0;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 5px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  width: 20em;
+  margin-left: 1em;
+}
+.btn:hover { background: rgb(66,129,96); border-radius: 50px; }
+.btn:active { background: rgb(0,0,0); margin-top: 5px; } /* при нажатии */
+
+.statis_onefgile {
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 5px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  width: 20em;
+  margin-left: 1em;
+}
+.statis_onefgile:hover { background: rgb(66,129,96); border-radius: 50px; }
+.statis_onefgile:active { background: rgb(0,0,0); margin-top: 5px; } /* при нажатии */
+
+.statis_twofgile {
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 5px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  width: 20em;
+  margin-left: 1em;
+  margin-top: 15px;
+}
+.statis_twofgile:hover { background: rgb(66,129,96); border-radius: 50px; }
+.statis_twofgile:active { background: rgb(0,0,0); margin-top: 5px; } /* при нажатии */
+
+.statis_threefgile {
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 5px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  width: 20em;
+  margin-left: 1em;
+  margin-top: 15px;
+}
+.statis_threefgile:hover { background: rgb(66,129,96); border-radius: 50px; }
+.statis_threefgile:active { background: rgb(0,0,0); margin-top: 5px; } /* при нажатии */
+
+/*statis_fourfgile*/
+
+.statis_fourfgile {
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 5px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  width: 20em;
+  margin-left: 1em;
+  margin-top: 15px;
+}
+.statis_fourfgile:hover { background: rgb(66,129,96); border-radius: 50px; }
+.statis_fourfgile:active { background: rgb(0,0,0); margin-top: 5px; } /* при нажатии */
+
+footer{
+  background: rgb(182,0,255);
+  padding: 20px 0;
+  border-bottom: 3px solid rgb(33, 31, 31);
+  border-right: 3px solid rgb(33, 31, 31);
+  border-left: 3px solid rgb(33, 31, 31);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 99.6%;
+	height: 90px;
+  text-align: center;
+  margin-top: 100%;
+}
+
+.vk {
+  font-weight: 200;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 5px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  width: 10px;
+  height: 5px;
+  text-align: center;
+  outline: none;
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  margin-left: 30%;
+}
+
+.vk:hover { background: rgb(66,129,96); border-radius: 50px; }
+.vk:active { background: rgb(0,0,0); margin-top: 5px; } /* при нажатии */
+
+.discord {
+  font-weight: 200;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 5px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  width: 7em;
+  height: 5px;
+  outline: none;
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  margin-left: 25px;
+}
+
+.discord:hover { background: rgb(66,129,96); border-radius: 50px; }
+.discord:active { background: rgb(0,0,0); margin-top: 5px; } /* при нажатии */
+
+.github {
+  font-weight: 200;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 5px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  width: 5em;
+  height: 5px;
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  margin-left: 25px;
+}
+
+.github:hover { background: rgb(66,129,96); border-radius: 50px; }
+.github:active { background: rgb(0,0,0); margin-top: 5px; } /* при нажатии */
